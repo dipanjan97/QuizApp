@@ -27,12 +27,15 @@
         android:layout_marginEnd="20dp"
         app:cardCornerRadius="10dp"
         app:cardElevation="8dp"
+        android:forceDarkAllowed="true"
+
         >
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="16dp"
+            android:background="#F2121212"
             >
             <TextView
                 android:layout_width="match_parent"
@@ -41,7 +44,7 @@
                 android:text="Welcome"
                 android:gravity="center"
                 android:textStyle="bold"
-                android:textColor="#363A43">
+                android:textColor="#FFFFFF">
 
             </TextView>
             <TextView
@@ -51,7 +54,7 @@
                 android:text="Please enter your name"
                 android:gravity="center"
                 android:textStyle="normal"
-                android:textColor="#7A8089">
+                android:textColor="#FFFFFF">
 
             </TextView>
 
@@ -59,6 +62,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:textColorHint="#FFFFFF"
+
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 >
 
@@ -67,8 +72,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Name"
-                    android:textColor="#363A43"
-                    android:textColorHint="#7A8089"/>
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:forceDarkAllowed="true"
+                    android:background="@drawable/name_border"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -77,7 +84,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:background="@color/colorPrimary"
+                android:background="#018786"
                 android:text="Start"
                 android:textColor="@android:color/white" />
         </LinearLayout>
